@@ -1,0 +1,421 @@
+
+clear
+clc
+
+
+dynare DCP_D;
+irfModel_1 = oo_.irfs;
+clear oo_
+
+dynare PCP_D;
+irfModel_2 = oo_.irfs;
+clear oo_
+
+dynare LCP_D;
+irfModel_3 = oo_.irfs;
+clear oo_
+
+
+lengthH = 20;
+z = 1:lengthH;
+% close all
+
+%%
+%%
+%%        First Plot
+%%
+%%
+
+
+%%  Plotting IRF 
+
+fig(1)= figure('Name',['Monetary Policy Shock in U'],'NumberTitle','off');
+
+subplot(3,3,1)
+plot(z,irfModel_1.i_G_eps_i_U*100,'LineWidth',2)
+hold on
+plot(z,irfModel_2.i_G_eps_i_U*100,'LineWidth',2)
+plot(z,irfModel_3.i_G_eps_i_U*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Interest Rate in G')
+legend('DCP','PCP','LCP')
+
+subplot(3,3,2)
+plot(z,irfModel_1.pi_G_eps_i_U*100,'LineWidth',2)
+hold on
+plot(z,irfModel_2.pi_G_eps_i_U*100,'LineWidth',2)
+plot(z,irfModel_3.pi_G_eps_i_U*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Inflation Rate in G')
+
+subplot(3,3,3)
+plot(z,irfModel_1.q_G_eps_i_U*100,'LineWidth',2)
+hold on
+plot(z,irfModel_2.q_G_eps_i_U*100,'LineWidth',2)
+plot(z,irfModel_3.q_G_eps_i_U*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Exchange Rate G to U')
+
+subplot(3,3,4)
+plot(z,irfModel_1.y_G_eps_i_U*100,'LineWidth',2)
+hold on
+plot(z,irfModel_2.y_G_eps_i_U*100,'LineWidth',2)
+plot(z,irfModel_3.y_G_eps_i_U*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Output in G')
+
+irf_dp_tot_GU_1 = -irfModel_1.p_GU_eps_i_U + irfModel_1.p_UG_eps_i_U;
+irf_dp_tot_GU_2 = -irfModel_2.p_GU_eps_i_U + irfModel_2.p_UG_eps_i_U;
+irf_dp_tot_GU_3 = -irfModel_3.p_GU_eps_i_U + irfModel_3.p_UG_eps_i_U;
+subplot(3,3,5)
+plot(z,irf_dp_tot_GU_1*100,'LineWidth',2)
+hold on
+plot(z,irf_dp_tot_GU_2*100,'LineWidth',2)
+plot(z,irf_dp_tot_GU_3*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('ToT in G to U')
+
+%Import Prices
+irf_import_UG_ns_eps_i_U_1 = irfModel_1.p_UG_eps_i_U + irfModel_1.q_G_eps_i_U;
+irf_import_UG_ns_eps_i_U_2 = irfModel_2.p_UG_eps_i_U + irfModel_2.q_G_eps_i_U;
+irf_import_UG_ns_eps_i_U_3 = irfModel_3.p_UG_eps_i_U + irfModel_3.q_G_eps_i_U;
+subplot(3,3,6)
+plot(z,irf_import_UG_ns_eps_i_U_1*100,'LineWidth',2)
+hold on
+plot(z,irf_import_UG_ns_eps_i_U_2*100,'LineWidth',2)
+plot(z,irf_import_UG_ns_eps_i_U_3*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Import Prices in G from U')
+
+%Export Prices
+irf_export_GU_ns_eps_i_U_1 = irfModel_1.p_GU_eps_i_U + irfModel_1.q_G_eps_i_U;
+irf_export_GU_ns_eps_i_U_2 = irfModel_2.p_GU_eps_i_U + irfModel_2.q_G_eps_i_U;
+irf_export_GU_ns_eps_i_U_3 = irfModel_3.p_GU_eps_i_U + irfModel_3.q_G_eps_i_U;
+subplot(3,3,7)
+plot(z,irf_export_GU_ns_eps_i_U_1*100,'LineWidth',2)
+hold on
+plot(z,irf_export_GU_ns_eps_i_U_2*100,'LineWidth',2)
+plot(z,irf_export_GU_ns_eps_i_U_3*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Export Prices from G to U')
+
+export_G_1=(irfModel_1.y_GR_eps_i_U+irfModel_1.y_RU_eps_i_U)/2;
+export_G_2=(irfModel_2.y_GR_eps_i_U+irfModel_2.y_RU_eps_i_U)/2;
+export_G_3=(irfModel_3.y_GR_eps_i_U+irfModel_3.y_RU_eps_i_U)/2;
+subplot(3,3,8)
+plot(z,export_G_1*100,'LineWidth',2)
+hold on
+plot(z,export_G_2*100,'LineWidth',2)
+plot(z,export_G_3*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Exports G')
+
+%%  Plotting IRF 
+
+fig(1)= figure('Name',['Monetary Policy Shock in U'],'NumberTitle','off');
+
+subplot(3,5,1)
+plot(z,irfModel_1.y_G_eps_i_U*100,'LineWidth',2)
+hold on
+plot(z,irfModel_2.y_G_eps_i_U*100,'LineWidth',2)
+plot(z,irfModel_3.y_G_eps_i_U*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Output in G')
+legend('DCP','PCP','LCP')
+
+subplot(3,5,6)
+plot(z,irfModel11.y_U_eps_i_U*100,'LineWidth',2)
+hold on
+plot(z,irfModel16.y_U_eps_i_U*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Output in the U.S.')
+
+subplot(3,5,2)
+plot(z,irfModel11.pi_G_eps_i_U*100,'LineWidth',2)
+hold on
+plot(z,irfModel16.pi_eps_i_U*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Inflation in Vietnam') 
+
+subplot(3,5,7)
+plot(z,irfModel11.pi_U_eps_i_U*100,'LineWidth',2)
+hold on
+plot(z,irfModel16.pi_U_eps_i_U*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Inflation in the U.S.') 
+
+subplot(3,5,3)
+plot(z,zeros(1,20)*100,'LineWidth',2)
+hold on
+plot(z,irfModel16.i_eps_i_U*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Investment in Vietnam') 
+
+% subplot(3,5,8)
+% plot(z,zeros(1,20)*100,'LineWidth',2)
+% hold on
+% plot(z,zeros(1,20)*100,'LineWidth',2)
+% hold off
+% xlim([1 options_.irf]);
+% hline = refline(0, 0);  hline.Color='k';
+% title('Investment in the U.S.') 
+
+subplot(3,5,8)
+plot(z,irfModel11.i_U_eps_i_U*100,'LineWidth',2)
+hold on
+plot(z,irfModel16.i_U_eps_i_U*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Monetary Policy in the U.S.') 
+
+subplot(3,5,4)
+plot(z,irfModel11.c_G_eps_i_U*100,'LineWidth',2)
+hold on
+plot(z,irfModel16.c_eps_i_U*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Consumption in Vietnam') 
+
+subplot(3,5,9)
+plot(z,irfModel11.c_U_eps_i_U*100,'LineWidth',2)
+hold on
+plot(z,irfModel16.c_U_eps_i_U*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Consumption in the U.S.') 
+
+% as in DCP paper
+% Benchmark
+irf_pi_U_eps_i_U_M11 = irfModel11.pi_U_eps_i_U;
+irf_pi_G_eps_i_U_M11 = irfModel11.pi_G_eps_i_U;
+irf_pi_R_eps_i_U_M11 = irfModel11.pi_R_eps_i_U;
+irf_p_U_eps_i_U_M11 = cumsum(irf_pi_U_eps_i_U_M11);
+irf_p_G_eps_i_U_M11 = cumsum(irf_pi_G_eps_i_U_M11);
+irf_p_R_eps_i_U_M11 = cumsum(irf_pi_R_eps_i_U_M11);
+% Full
+irf_pi_U_eps_i_U_M16 = irfModel16.pi_U_eps_i_U;
+irf_pi_G_eps_i_U_M16 = irfModel16.pi_eps_i_U;
+irf_pi_R_eps_i_U_M16 = irfModel16.pi_R_eps_i_U;
+irf_p_U_eps_i_U_M16 = cumsum(irf_pi_U_eps_i_U_M16);
+irf_p_G_eps_i_U_M16 = cumsum(irf_pi_G_eps_i_U_M16);
+irf_p_R_eps_i_U_M16 = cumsum(irf_pi_R_eps_i_U_M16);
+
+% Calculate non-stationary (ns) variables 
+irf_e_G_ns_eps_i_U_M11 = irfModel11.q_G_eps_i_U + irf_p_G_eps_i_U_M11-irf_p_U_eps_i_U_M11;
+irf_e_R_ns_eps_i_U_M11 = irfModel11.q_R_eps_i_U + irf_p_R_eps_i_U_M11-irf_p_U_eps_i_U_M11;
+
+irf_p_UU_ns_eps_i_U_M11 = irfModel11.p_UU_eps_i_U + irf_p_U_eps_i_U_M11;
+irf_p_UG_ns_eps_i_U_M11 = irfModel11.p_UG_eps_i_U + irf_p_U_eps_i_U_M11;
+irf_p_UR_ns_eps_i_U_M11 = irfModel11.p_UR_eps_i_U + irf_p_U_eps_i_U_M11;
+
+irf_p_GG_ns_eps_i_U_M11 = irfModel11.p_GG_eps_i_U + irf_p_G_eps_i_U_M11;
+irf_p_GU_ns_eps_i_U_M11 = irfModel11.p_GU_eps_i_U + irf_p_U_eps_i_U_M11;
+irf_p_GR_ns_eps_i_U_M11 = irfModel11.p_GR_eps_i_U + irf_p_U_eps_i_U_M11;
+
+irf_p_RR_ns_eps_i_U_M11 = irfModel11.p_RR_eps_i_U + irf_p_R_eps_i_U_M11;
+irf_p_RG_ns_eps_i_U_M11 = irfModel11.p_RG_eps_i_U + irf_p_U_eps_i_U_M11;
+irf_p_RU_ns_eps_i_U_M11 = irfModel11.p_RU_eps_i_U + irf_p_U_eps_i_U_M11;
+
+
+irf_e_G_ns_eps_i_U_M16 = irfModel16.q_G_eps_i_U + irf_p_G_eps_i_U_M16-irf_p_U_eps_i_U_M16;
+irf_e_R_ns_eps_i_U_M16 = irfModel16.q_R_eps_i_U + irf_p_R_eps_i_U_M16-irf_p_U_eps_i_U_M16;
+
+irf_p_UU_ns_eps_i_U_M16 = irfModel16.p_UU_eps_i_U + irf_p_U_eps_i_U_M16;
+irf_p_UG_ns_eps_i_U_M16 = irfModel16.p_UG_eps_i_U + irf_p_U_eps_i_U_M16;
+irf_p_UR_ns_eps_i_U_M16 = irfModel16.p_UR_eps_i_U + irf_p_U_eps_i_U_M16;
+
+irf_p_GG_ns_eps_i_U_M16 = irfModel16.p_GG_eps_i_U + irf_p_G_eps_i_U_M16;
+irf_p_GU_ns_eps_i_U_M16 = irfModel16.p_GU_eps_i_U + irf_p_U_eps_i_U_M16;
+irf_p_GR_ns_eps_i_U_M16 = irfModel16.p_GR_eps_i_U + irf_p_U_eps_i_U_M16;
+
+irf_p_RR_ns_eps_i_U_M16 = irfModel16.p_RR_eps_i_U + irf_p_R_eps_i_U_M16;
+irf_p_RG_ns_eps_i_U_M16 = irfModel16.p_RG_eps_i_U + irf_p_U_eps_i_U_M16;
+irf_p_RU_ns_eps_i_U_M16 = irfModel16.p_RU_eps_i_U + irf_p_U_eps_i_U_M16;
+
+
+%Import Prices
+irf_pd_UG_ns_eps_i_U_M11 = irf_p_UG_ns_eps_i_U_M11 +irf_e_G_ns_eps_i_U_M11;
+irf_pd_UR_ns_eps_i_U_M11 = irf_p_UR_ns_eps_i_U_M11 +irf_e_R_ns_eps_i_U_M11;
+irf_pd_RG_ns_eps_i_U_M11 = irf_p_RG_ns_eps_i_U_M11 +irf_e_G_ns_eps_i_U_M11;
+irf_pd_GR_ns_eps_i_U_M11 = irf_p_GR_ns_eps_i_U_M11 +irf_e_R_ns_eps_i_U_M11;
+
+irf_pd_UG_ns_eps_i_U_M16 = irf_p_UG_ns_eps_i_U_M16 +irf_e_G_ns_eps_i_U_M16;
+irf_pd_UR_ns_eps_i_U_M16 = irf_p_UR_ns_eps_i_U_M16 +irf_e_R_ns_eps_i_U_M16;
+irf_pd_RG_ns_eps_i_U_M16 = irf_p_RG_ns_eps_i_U_M16 +irf_e_G_ns_eps_i_U_M16;
+irf_pd_GR_ns_eps_i_U_M16 = irf_p_GR_ns_eps_i_U_M16 +irf_e_R_ns_eps_i_U_M16;
+
+%Trade Balance
+TB_U_M11=(exp(irf_p_UG_ns_eps_i_U_M11).*exp(irfModel11.y_UG_eps_i_U)+exp(irf_p_UR_ns_eps_i_U_M11).*exp(irfModel11.y_UR_eps_i_U))-(exp(irf_p_GU_ns_eps_i_U_M11).*exp(irfModel11.y_GU_eps_i_U)+exp(irf_p_RU_ns_eps_i_U_M11).*exp(irfModel11.y_RU_eps_i_U));
+TB_G_M11=exp(irf_e_G_ns_eps_i_U_M11).*((exp(irf_p_GU_ns_eps_i_U_M11).*exp(irfModel11.y_GU_eps_i_U)+exp(irf_p_GR_ns_eps_i_U_M11).*exp(irfModel11.y_GR_eps_i_U))-(exp(irf_p_UG_ns_eps_i_U_M11).*exp(irfModel11.y_UG_eps_i_U)+exp(irf_p_RG_ns_eps_i_U_M11).*exp(irfModel11.y_RG_eps_i_U)));
+TB_R_M11=exp(irf_e_R_ns_eps_i_U_M11).*((exp(irf_p_RU_ns_eps_i_U_M11).*exp(irfModel11.y_RU_eps_i_U)+exp(irf_p_RG_ns_eps_i_U_M11).*exp(irfModel11.y_RG_eps_i_U))-(exp(irf_p_UR_ns_eps_i_U_M11).*exp(irfModel11.y_UR_eps_i_U)+exp(irf_p_GR_ns_eps_i_U_M11).*exp(irfModel11.y_GR_eps_i_U)));
+
+
+TB_U_M16=(exp(irf_p_UG_ns_eps_i_U_M16).*exp(irfModel16.y_UG_eps_i_U)+exp(irf_p_UR_ns_eps_i_U_M16).*exp(irfModel16.y_UR_eps_i_U))-(exp(irf_p_GU_ns_eps_i_U_M16).*exp(irfModel16.y_GU_eps_i_U)+exp(irf_p_RU_ns_eps_i_U_M16).*exp(irfModel16.y_RU_eps_i_U));
+TB_G_M16=exp(irf_e_G_ns_eps_i_U_M16).*((exp(irf_p_GU_ns_eps_i_U_M16).*exp(irfModel16.y_GU_eps_i_U)+exp(irf_p_GR_ns_eps_i_U_M16).*exp(irfModel16.y_GR_eps_i_U))-(exp(irf_p_UG_ns_eps_i_U_M16).*exp(irfModel16.y_UG_eps_i_U)+exp(irf_p_RG_ns_eps_i_U_M16).*exp(irfModel16.y_RG_eps_i_U)));
+TB_R_M16=exp(irf_e_R_ns_eps_i_U_M16).*((exp(irf_p_RU_ns_eps_i_U_M16).*exp(irfModel16.y_RU_eps_i_U)+exp(irf_p_RG_ns_eps_i_U_M16).*exp(irfModel16.y_RG_eps_i_U))-(exp(irf_p_UR_ns_eps_i_U_M16).*exp(irfModel16.y_UR_eps_i_U)+exp(irf_p_GR_ns_eps_i_U_M16).*exp(irfModel16.y_GR_eps_i_U)));
+
+
+
+GDP_U_M11=exp(irf_p_U_eps_i_U_M11).*exp(irfModel11.c_U_eps_i_U)+TB_U_M11;
+GDP_G_M11=exp(irf_p_G_eps_i_U_M11).*exp(irfModel11.c_G_eps_i_U)+TB_G_M11;
+GDP_R_M11=exp(irf_p_R_eps_i_U_M11).*exp(irfModel11.c_R_eps_i_U)+TB_R_M11;
+
+GDP_U_M16=exp(irf_p_U_eps_i_U_M16).*exp(irfModel16.c_U_eps_i_U)+TB_U_M16;
+GDP_G_M16=exp(irf_p_G_eps_i_U_M16).*exp(irfModel16.c_eps_i_U)+TB_G_M16+exp(irf_p_G_eps_i_U_M16).*exp(irfModel16.i_eps_i_U);
+GDP_R_M16=exp(irf_p_R_eps_i_U_M16).*exp(irfModel16.c_R_eps_i_U)+TB_R_M16;
+
+
+TBGDP_U_M11=TB_U_M11./GDP_U_M11;
+TBGDP_G_M11=TB_G_M11./GDP_G_M11;
+TBGDP_R_M11=TB_R_M11./GDP_R_M11;
+
+TBGDP_U_M16=TB_U_M16./GDP_U_M16;
+TBGDP_G_M16=TB_G_M16./GDP_G_M16;
+TBGDP_R_M16=TB_R_M16./GDP_R_M16;
+
+
+
+% exV1 = (irfModel11.y_GU_eps_i_U+irfModel11.y_GR_eps_i_U)/2;
+% exV2 = (irfModel16.y_GU_eps_i_U+irfModel16.y_GR_eps_i_U)/2;
+% imqV1 = (irfModel11.y_UG_eps_i_U+irfModel11.y_RG_eps_i_U)/2;
+% imqV2 = (irfModel16.y_UG_eps_i_U+irfModel16.y_RG_eps_i_U)/2;
+% TBV1 = exV1 - imqV1;
+% TBV2 = exV2 - imqV2;
+subplot(3,5,5)
+plot(z,TBGDP_G_M11*100,'LineWidth',2)
+hold on
+plot(z,TBGDP_G_M16*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Trade Balance of Vietnam') 
+
+% exU1 = (irfModel11.y_UG_eps_i_U+irfModel11.y_UR_eps_i_U)/2;
+% exU2 = (irfModel16.y_UG_eps_i_U+irfModel16.y_UR_eps_i_U)/2;
+% imqU1 = (irfModel11.y_GU_eps_i_U+irfModel11.y_RU_eps_i_U)/2;
+% imqU2 = (irfModel16.y_GU_eps_i_U+irfModel16.y_RU_eps_i_U)/2;
+% TBU1 = exU1 - imqU1;
+% TBU2 = exU2 - imqU2;
+subplot(3,5,10)
+plot(z,TBGDP_U_M11*100,'LineWidth',2)
+hold on
+plot(z,TBGDP_U_M16*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Trade Balance of the U.S.') 
+
+subplot(3,5,13)
+plot(z,irfModel11.i_G_eps_i_U*100,'LineWidth',2)
+hold on
+plot(z,irfModel16.r_eps_i_U*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Monetary Policy Rate in Vietnam') 
+
+subplot(3,5,12) 
+plot(z,irfModel11.q_G_eps_i_U*100,'LineWidth',2)
+hold on
+plot(z,irfModel16.q_G_eps_i_U*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Exchange Rate') 
+
+subplot(3,5,11)
+plot(z,zeros(1,20),'LineWidth',2)
+hold on
+plot(z,irfModel16.tau_eps_i_U*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Reserve Requirement')
+
+% Terms of Trade
+irf_tot_UG_eps_i_U_M11 = irf_p_GU_ns_eps_i_U_M11-irf_p_UG_ns_eps_i_U_M11;
+irf_tot_UR_eps_i_U_M11 = irf_p_RU_ns_eps_i_U_M11-irf_p_UR_ns_eps_i_U_M11;
+irf_tot_GU_eps_i_U_M11 = irf_p_UG_ns_eps_i_U_M11-irf_p_GU_ns_eps_i_U_M11;
+irf_tot_RU_eps_i_U_M11 = irf_p_UR_ns_eps_i_U_M11-irf_p_RU_ns_eps_i_U_M11;
+irf_tot_GR_eps_i_U_M11 = irf_p_RG_ns_eps_i_U_M11-irf_p_GR_ns_eps_i_U_M11;
+
+irf_tot_UG_eps_i_U_M16 = irf_p_GU_ns_eps_i_U_M16-irf_p_UG_ns_eps_i_U_M16;
+irf_tot_UR_eps_i_U_M16 = irf_p_RU_ns_eps_i_U_M16-irf_p_UR_ns_eps_i_U_M16;
+irf_tot_GU_eps_i_U_M16 = irf_p_UG_ns_eps_i_U_M16-irf_p_GU_ns_eps_i_U_M16;
+irf_tot_RU_eps_i_U_M16 = irf_p_UR_ns_eps_i_U_M16-irf_p_RU_ns_eps_i_U_M16;
+irf_tot_GR_eps_i_U_M16 = irf_p_RG_ns_eps_i_U_M16-irf_p_GR_ns_eps_i_U_M16;
+
+subplot(3,5,14)
+plot(z,irf_tot_GU_eps_i_U_M11*100,'LineWidth',2)
+hold on
+plot(z,irf_tot_GU_eps_i_U_M16*100,'LineWidth',2)
+hold off
+ylim([-0.8 0.8])
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('Terms of Trade Vietnam to U.S.') 
+
+
+worldtrade_M11=((irfModel11.y_UR_eps_i_U+irfModel11.y_RU_eps_i_U)+(irfModel11.y_GU_eps_i_U+irfModel11.y_UG_eps_i_U)+(irfModel11.y_GR_eps_i_U+irfModel11.y_RG_eps_i_U))/6;
+worldtrade_M16=((irfModel16.y_UR_eps_i_U+irfModel16.y_RU_eps_i_U)+(irfModel16.y_GU_eps_i_U+irfModel16.y_UG_eps_i_U)+(irfModel16.y_GR_eps_i_U+irfModel16.y_RG_eps_i_U))/6;
+
+subplot(3,5,15)
+plot(z,worldtrade_M11*100,'LineWidth',2)
+hold on
+plot(z,worldtrade_M16*100,'LineWidth',2)
+hold off
+xlim([1 options_.irf]);
+hline = refline(0, 0);  hline.Color='k';
+title('World Trade') 
+
+
+% ex1=(irfModel11.exGU_eps_i_U+irfModel11.exGR_eps_i_U)/2;
+% ex2=(irfModel16.exGU_eps_i_U+irfModel16.exGR_eps_i_U)/2;
+% subplot(3,5,14)
+% plot(z,ex1*100,'LineWidth',2)
+% hold on
+% plot(z,ex2*100,'LineWidth',2)
+% hold off
+% xlim([1 options_.irf]);
+% hline = refline(0, 0);  hline.Color='k';
+% title('Export Price Vietnam') 
+% 
+% im1=(irfModel11.imUG_eps_i_U+irfModel11.imRG_eps_i_U)/2;
+% im2=(irfModel16.imUG_eps_i_U+irfModel16.imRG_eps_i_U)/2;
+% subplot(3,5,15)
+% plot(z,im1*100,'LineWidth',2)
+% hold on
+% plot(z,im2*100,'LineWidth',2)
+% hold off
+% xlim([1 options_.irf]);
+% hline = refline(0, 0);  hline.Color='k';
+% title('Import Price Vietnam') 

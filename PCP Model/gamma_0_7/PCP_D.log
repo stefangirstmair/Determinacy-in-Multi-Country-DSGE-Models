@@ -1,0 +1,207 @@
+Starting Dynare (version 5.3).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 105 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+STEADY-STATE RESULTS:
+
+p_UU         		 0
+p_GG         		 0
+p_RR         		 0
+p_UG         		 0
+p_UR         		 0
+p_GU         		 0
+p_GR         		 0
+p_RG         		 0
+p_RU         		 0
+p_UU_reset   		 0
+p_GG_reset   		 0
+p_RR_reset   		 0
+c_U          		 -0.120511
+c_R          		 -0.120511
+c_G          		 -0.120511
+pi_U         		 0
+pi_R         		 0
+pi_G         		 0
+i_U          		 0.010101
+i_R          		 0.010101
+i_G          		 0.010101
+i_U_G        		 0.010101
+i_U_R        		 0.010101
+B_U          		 0
+B_G          		 0
+B_R          		 0
+w_U          		 -0.988984
+w_G          		 -0.988984
+w_R          		 -0.988984
+n_U          		 -0.517822
+n_G          		 -0.517822
+n_R          		 -0.517822
+mc_U         		 -0.693147
+mc_G         		 -0.693147
+mc_R         		 -0.693147
+x_U          		 -0.813659
+x_G          		 -0.813659
+x_R          		 -0.813659
+y_U          		 0.284954
+y_R          		 0.284954
+y_G          		 0.284954
+y_UU         		 -0.0717212
+y_UG         		 -1.61217
+y_UR         		 -1.61217
+y_GG         		 -0.0717212
+y_GU         		 -1.61217
+y_GR         		 -1.61217
+y_RR         		 -0.0717212
+y_RU         		 -1.61217
+y_RG         		 -1.61217
+Profit_U     		 0.66485
+Profit_G     		 0.66485
+Profit_R     		 0.66485
+q_G          		 0
+q_R          		 0
+eps_M_U      		 0
+eps_M_G      		 0
+eps_M_R      		 0
+a_U          		 1
+a_G          		 1
+a_R          		 1
+uip_G        		 0
+uip_R        		 0
+y_U_UG       		 -1.61217
+y_G_UG       		 -1.61217
+p_U_UG       		 0
+p_G_UG       		 0
+p_U_UG_reset 		 0
+p_G_UG_reset 		 0
+y_U_UR       		 -1.61217
+y_R_UR       		 -1.61217
+p_U_UR       		 0
+p_R_UR       		 0
+p_U_UR_reset 		 0
+p_R_UR_reset 		 0
+y_U_GU       		 -1.61217
+y_G_GU       		 -1.61217
+p_U_GU       		 0
+p_G_GU       		 0
+p_U_GU_reset 		 0
+p_G_GU_reset 		 0
+y_R_GR       		 -1.61217
+y_G_GR       		 -1.61217
+y_U_GR       		 -1.61217
+p_R_GR       		 0
+p_G_GR       		 0
+p_U_GR       		 0
+p_R_GR_reset 		 0
+p_G_GR_reset 		 0
+p_U_GR_reset 		 0
+y_U_RU       		 -1.61217
+y_R_RU       		 -1.61217
+p_U_RU       		 0
+p_R_RU       		 0
+p_U_RU_reset 		 0
+p_R_RU_reset 		 0
+y_R_RG       		 -1.61217
+y_G_RG       		 -1.61217
+y_U_RG       		 -1.61217
+p_R_RG       		 0
+p_G_RG       		 0
+p_U_RG       		 0
+p_R_RG_reset 		 0
+p_G_RG_reset 		 0
+p_U_RG_reset 		 0
+
+MODEL SUMMARY
+
+  Number of variables:         105
+  Number of stochastic shocks: 10
+  Number of state variables:   38
+  Number of jumpers:           28
+  Number of static variables:  45
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables      eps_i_U    eps_i_G    eps_i_R      eps_R      eps_G    eps_a_U    eps_a_G    eps_a_R  eps_uip_G  eps_uip_R
+eps_i_U       0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_i_G       0.000000   0.000006   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_i_R       0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_R         0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_G         0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_a_U       0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_a_G       0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_a_R       0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_uip_G     0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_uip_R     0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                pi_G            p_GG
+p_UU(-1)                   -0.025973        0.011214
+p_GG(-1)                    0.695902        0.199722
+p_RR(-1)                    0.022826       -0.028960
+i_U(-1)                     0.052434       -0.046890
+i_R(-1)                     0.093164       -0.078219
+i_G(-1)                    -0.147610        0.122843
+B_G(-1)                     0.001241       -0.002445
+B_R(-1)                    -0.003572        0.000806
+eps_M_U(-1)                -0.173867        0.131477
+eps_M_G(-1)                 0.689774       -0.327870
+eps_M_R(-1)                -0.159836        0.122726
+a_U(-1)                    -0.016380        0.010790
+a_G(-1)                    -0.234656       -0.022103
+a_R(-1)                    -0.033679        0.023115
+uip_G(-1)                   0.923789       -0.589578
+uip_R(-1)                  -0.092613        0.078094
+p_U_UG(-1)                  0.092567       -0.070595
+p_U_UR(-1)                  0.001726       -0.002439
+p_G_GU(-1)                  0.042873       -0.033992
+p_G_GR(-1)                  0.052238       -0.039916
+p_R_RU(-1)                 -0.001297       -0.001972
+p_R_RG(-1)                  0.091849       -0.072571
+w_U(-1)                     0.004094       -0.002937
+w_G(-1)                     0.048421        0.007811
+w_R(-1)                     0.026368       -0.013825
+eps_i_U                    -0.198705        0.150259
+eps_i_G                     0.803465       -0.381910
+eps_i_R                    -0.319671        0.245452
+eps_R                      -0.109978        0.100372
+eps_G                       0.185065       -0.170425
+eps_a_U                    -0.020098        0.013240
+eps_a_G                    -0.274195       -0.025828
+eps_a_R                    -0.042098        0.028894
+eps_uip_G                   0.985270       -0.628816
+eps_uip_R                  -0.185225        0.156189
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+pi_G             -0.000520        0.002651        0.000007       -0.039282        0.206446
+p_GG              0.000205        0.001874        0.000004        0.203935        0.260924
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE       pi_G     p_GG
+pi_G         1.0000  -0.9382
+p_GG        -0.9382   1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE         1       2       3       4       5
+pi_G        0.6434  0.5577  0.4593  0.4001  0.3501
+p_GG        0.8643  0.7250  0.5902  0.4831  0.4007
+
+
+
+VARIANCE DECOMPOSITION SIMULATING ONE SHOCK AT A TIME (in percent)
+                 eps_i_U           eps_i_G           eps_i_R             eps_R             eps_G           eps_a_U           eps_a_G           eps_a_R         eps_uip_G         eps_uip_R  Tot. lin. contr.
+pi_G                0.00            100.11              0.00              0.00              0.00              0.00              0.00              0.00              0.00              0.00            100.11
+p_GG                0.00            100.11              0.00              0.00              0.00              0.00              0.00              0.00              0.00              0.00            100.11
+Note: numbers do not add up to 100 due to non-zero correlation of simulated shocks in small samples
+
+Total computing time : 0h00m01s

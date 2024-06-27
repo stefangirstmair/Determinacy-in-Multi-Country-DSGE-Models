@@ -1,0 +1,402 @@
+Starting Dynare (version 5.0).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 114 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 2).
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+STEADY-STATE RESULTS:
+
+p_UU         		 0
+p_GG         		 0
+p_RR         		 0
+p_UG         		 0
+p_UR         		 0
+p_GU         		 0
+p_GR         		 0
+p_RG         		 0
+p_RU         		 0
+p_UU_reset   		 0
+p_GG_reset   		 0
+p_RR_reset   		 0
+c_U          		 -0.120511
+c_R          		 -0.120511
+c_G          		 -0.120511
+pi_U         		 0
+pi_R         		 0
+pi_G         		 0
+i_U          		 0.010101
+i_R          		 0.010101
+i_G          		 0.010101
+i_U_G        		 0.010101
+i_U_R        		 0.010101
+B_U          		 0
+B_G          		 0
+B_R          		 0
+w_U          		 -0.988984
+w_G          		 -0.988984
+w_R          		 -0.988984
+n_U          		 -0.517822
+n_G          		 -0.517822
+n_R          		 -0.517822
+mc_U         		 -0.693147
+mc_G         		 -0.693147
+mc_R         		 -0.693147
+x_U          		 -0.813659
+x_G          		 -0.813659
+x_R          		 -0.813659
+y_U          		 0.284954
+y_R          		 0.284954
+y_G          		 0.284954
+y_UU         		 -0.0717212
+y_UG         		 -1.61217
+y_UR         		 -1.61217
+y_GG         		 -0.0717212
+y_GU         		 -1.61217
+y_GR         		 -1.61217
+y_RR         		 -0.0717212
+y_RU         		 -1.61217
+y_RG         		 -1.61217
+Profit_U     		 0.66485
+Profit_G     		 0.66485
+Profit_R     		 0.66485
+q_G          		 0
+q_R          		 0
+eps_M_U      		 0
+eps_M_G      		 0
+eps_M_R      		 0
+a_U          		 1
+a_G          		 1
+a_R          		 1
+uip_G        		 0
+uip_R        		 0
+y_U_UG       		 -1.61217
+y_G_UG       		 -1.61217
+p_U_UG       		 0
+p_G_UG       		 0
+p_U_UG_reset 		 0
+p_G_UG_reset 		 0
+y_U_UR       		 -1.61217
+y_R_UR       		 -1.61217
+p_U_UR       		 0
+p_R_UR       		 0
+p_U_UR_reset 		 0
+p_R_UR_reset 		 0
+y_U_GU       		 -1.61217
+y_G_GU       		 -1.61217
+p_U_GU       		 0
+p_G_GU       		 0
+p_U_GU_reset 		 0
+p_G_GU_reset 		 0
+y_R_GR       		 -1.61217
+y_G_GR       		 -1.61217
+y_U_GR       		 -1.61217
+p_R_GR       		 0
+p_G_GR       		 0
+p_U_GR       		 0
+p_R_GR_reset 		 0
+p_G_GR_reset 		 0
+p_U_GR_reset 		 0
+y_U_RU       		 -1.61217
+y_R_RU       		 -1.61217
+p_U_RU       		 0
+p_R_RU       		 0
+p_U_RU_reset 		 0
+p_R_RU_reset 		 0
+y_R_RG       		 -1.61217
+y_G_RG       		 -1.61217
+y_U_RG       		 -1.61217
+p_R_RG       		 0
+p_G_RG       		 0
+p_U_RG       		 0
+p_R_RG_reset 		 0
+p_G_RG_reset 		 0
+p_U_RG_reset 		 0
+d_y_U        		 0
+d_i_U        		 0
+d_pi_U       		 0
+d_w_U        		 0
+d_y_G        		 0
+d_i_G        		 0
+d_pi_G       		 0
+d_w_G        		 0
+d_q_G        		 0
+
+You did not declare endogenous variables after the estimation/calib_smoother command.
+Initial value of the log posterior (or likelihood): 2346.5322
+-----------------
+f at the beginning of new iteration,     -2346.5321734875
+Predicted improvement:       35.235984573
+lambda =          1; f =        -2346.5263044
+lambda =    0.33333; f =        -2346.5316666
+lambda =    0.11111; f =        -2346.5321520
+lambda =   0.037037; f =        -1754.5241901
+lambda =   0.012346; f =        -2333.6664046
+lambda =  0.0041152; f =        -2345.6857440
+lambda =  0.0013717; f =        -2346.5120794
+lambda = 0.00045725; f =        -2346.5514365
+Norm of dx   0.083948
+----
+Improvement on iteration 1 =        0.019263009
+-----------------
+f at the beginning of new iteration,     -2346.5514364969
+Predicted improvement:        1.984531775
+lambda =          1; f =        -2346.5514323
+lambda =    0.33333; f =        -2194.0488292
+lambda =    0.11111; f =        -2332.5833669
+lambda =   0.037037; f =        -2344.8938394
+lambda =   0.012346; f =        -2346.3891914
+lambda =  0.0041152; f =        -2346.5441268
+lambda =  0.0013717; f =        -2346.5543425
+Norm of dx   0.020473
+----
+Improvement on iteration 2 =        0.002905992
+-----------------
+f at the beginning of new iteration,     -2346.5543424894
+Predicted improvement:        2.226566536
+lambda =          1; f =        -2346.5543077
+lambda =    0.33333; f =        -2346.5543424
+lambda =    0.11111; f =        -2310.6471985
+lambda =   0.037037; f =        -2343.4108086
+lambda =   0.012346; f =        -2346.2435853
+lambda =  0.0041152; f =        -2346.5318650
+lambda =  0.0013717; f =        -2346.5559112
+lambda = 0.00045725; f =        -2346.5558750
+lambda = 0.00088394; f =        -2346.5563941
+Norm of dx   0.031183
+----
+Improvement on iteration 3 =        0.002051572
+-----------------
+f at the beginning of new iteration,     -2346.5563940615
+Predicted improvement:        0.335734043
+lambda =          1; f =        -2346.5563911
+lambda =    0.33333; f =        -2244.9315770
+lambda =    0.11111; f =        -2340.2270253
+lambda =   0.037037; f =        -2345.9072817
+lambda =   0.012346; f =        -2346.4905648
+lambda =  0.0041152; f =        -2346.5510260
+lambda =  0.0013717; f =        -2346.5564439
+lambda = 0.00045725; f =        -2346.5566150
+lambda = 0.00088394; f =        -2346.5566368
+Norm of dx   0.009431
+----
+Improvement on iteration 4 =        0.000242786
+-----------------
+f at the beginning of new iteration,     -2346.5566368478
+Predicted improvement:        0.094267214
+lambda =          1; f =        -2321.7072032
+lambda =    0.33333; f =        -2344.3917673
+lambda =    0.11111; f =        -2346.3395322
+lambda =   0.037037; f =        -2346.5373892
+lambda =   0.012346; f =        -2346.5560466
+lambda =  0.0041152; f =        -2346.5570849
+Norm of dx  0.0050494
+----
+Improvement on iteration 5 =        0.000448079
+-----------------
+f at the beginning of new iteration,     -2346.5570849272
+Predicted improvement:        0.011917172
+lambda =          1; f =        -2345.1258059
+lambda =    0.33333; f =        -2346.4149033
+lambda =    0.11111; f =        -2346.5433555
+lambda =   0.037037; f =        -2346.5561313
+lambda =   0.012346; f =        -2346.5571654
+lambda =  0.0041152; f =        -2346.5571558
+lambda =  0.0079555; f =        -2346.5571823
+Norm of dx  0.0015849
+----
+Improvement on iteration 6 =        0.000097337
+-----------------
+f at the beginning of new iteration,     -2346.5571822643
+Predicted improvement:        0.005539090
+lambda =          1; f =        -2346.1545666
+lambda =    0.33333; f =        -2346.5156309
+lambda =    0.11111; f =        -2346.5533912
+lambda =   0.037037; f =        -2346.5570302
+lambda =   0.012346; f =        -2346.5572549
+Norm of dx  0.0011047
+----
+Improvement on iteration 7 =        0.000072606
+-----------------
+f at the beginning of new iteration,     -2346.5572548701
+Predicted improvement:        0.006326238
+lambda =          1; f =        -2346.0346768
+lambda =    0.33333; f =        -2346.5043701
+lambda =    0.11111; f =        -2346.5523808
+lambda =   0.037037; f =        -2346.5570285
+lambda =   0.012346; f =        -2346.5573341
+Norm of dx  0.0013961
+----
+Improvement on iteration 8 =        0.000079279
+-----------------
+f at the beginning of new iteration,     -2346.5573341491
+Predicted improvement:        0.004766561
+lambda =          1; f =        -2346.3648850
+lambda =    0.33333; f =        -2346.5395329
+lambda =    0.11111; f =        -2346.5560566
+lambda =   0.037037; f =        -2346.5574103
+lambda =   0.012346; f =        -2346.5574148
+Norm of dx  0.0010346
+----
+Improvement on iteration 9 =        0.000080644
+-----------------
+f at the beginning of new iteration,     -2346.5574147934
+Predicted improvement:        0.004467402
+lambda =          1; f =        -2346.2131948
+lambda =    0.33333; f =        -2346.5203236
+lambda =    0.11111; f =        -2346.5538875
+lambda =   0.037037; f =        -2346.5572301
+lambda =   0.012346; f =        -2346.5574637
+Norm of dx 0.00081891
+----
+Improvement on iteration 10 =        0.000048910
+-----------------
+f at the beginning of new iteration,     -2346.5574637035
+Predicted improvement:        0.003925231
+lambda =          1; f =        -2346.5448289
+lambda =    0.33333; f =        -2346.5576724
+lambda =    0.11111; f =        -2346.5580185
+Norm of dx 0.00020451
+----
+Improvement on iteration 11 =        0.000554754
+-----------------
+f at the beginning of new iteration,     -2346.5580184573
+Predicted improvement:        0.000172307
+lambda =          1; f =        -2346.5581259
+Norm of dx 1.4191e-05
+----
+Improvement on iteration 12 =        0.000107478
+-----------------
+f at the beginning of new iteration,     -2346.5581259352
+Predicted improvement:        0.000000417
+lambda =          1; f =        -2346.5581245
+lambda =    0.33333; f =        -2346.5581256
+lambda =    0.11111; f =        -2346.5581258
+lambda =   0.037037; f =        -2346.5581259
+lambda =   0.012346; f =        -2346.5581259
+lambda =  0.0041152; f =        -2346.5581259
+lambda =  0.0013717; f =        -2346.5581259
+lambda = 0.00045725; f =        -2346.5581259
+lambda = 0.00015242; f =        -2346.5581259
+lambda = 5.0805e-05; f =        -2346.5581259
+lambda = 1.6935e-05; f =        -2346.5581259
+lambda =  5.645e-06; f =        -2346.5581259
+lambda = 1.8817e-06; f =        -2346.5581259
+lambda = 6.2723e-07; f =        -2346.5581259
+lambda = 2.0908e-07; f =        -2346.5581259
+lambda = 4.0418e-07; f =        -2346.5581259
+lambda = 2.7215e-07; f =        -2346.5581259
+lambda = 2.1466e-07; f =        -2346.5581259
+lambda = 2.1074e-07; f =        -2346.5581259
+Norm of dx 8.9171e-06
+Cliff.  Perturbing search direction.
+Predicted improvement:        0.000000775
+lambda =          1; f =        -2346.5581245
+lambda =    0.33333; f =        -2346.5581259
+lambda =    0.11111; f =        -2346.5581260
+lambda =   0.037037; f =        -2346.5581260
+Norm of dx 1.5752e-05
+
+badg2 =
+
+     0
+
+----
+Improvement on iteration 13 =        0.000000046
+improvement < crit termination
+
+Final value of minus the log posterior (or likelihood):-2346.558126 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+           prior mean     mode    s.d.  prior pstdev
+
+phi_pi_U       1.5000   1.7958  0.3444   gamm 0.2500 
+phi_pi_G       1.5000   1.4228  0.2770   gamm 0.2500 
+phi_pi_R       1.5000   1.7235  0.2751   gamm 0.2500 
+phi_Y_U        0.2500   0.7403  0.1371   norm 0.1500 
+phi_Y_G        0.2500   0.7267  0.1126   norm 0.1500 
+phi_Y_R        0.2500   0.4536  0.1245   norm 0.1500 
+theta_p        0.7500   0.7063  0.0232   beta 0.1000 
+theta_W        0.7500   0.6990  0.0859   beta 0.1000 
+rho_m_U        0.7500   0.5511  0.0569   beta 0.1000 
+rho_m_G        0.7500   0.5585  0.0604   beta 0.1000 
+rho_m          0.7500   0.4380  0.0950   beta 0.1000 
+rho_eps_U      0.7500   0.9341  0.0162   beta 0.1000 
+rho_eps_G      0.7500   0.9101  0.0248   beta 0.1000 
+rho_eps_R      0.7500   0.9331  0.0173   beta 0.1000 
+rho_uip_G      0.7500   0.9414  0.0089   beta 0.1000 
+rho_uip_R      0.7500   0.7279  0.0558   beta 0.1000 
+
+standard deviation of shocks
+           prior mean     mode    s.d.  prior pstdev
+
+eps_i_U        0.0100   0.0031  0.0003   invg 0.0050 
+eps_i_G        0.0100   0.0025  0.0002   invg 0.0050 
+eps_i_R        0.0100   0.0071  0.0016   invg 0.0050 
+eps_R          0.0100   0.0081  0.0014   invg 0.0050 
+eps_G          0.0100   0.0109  0.0012   invg 0.0050 
+eps_a_U        0.0100   0.0050  0.0009   invg 0.0050 
+eps_a_G        0.0100   0.0051  0.0010   invg 0.0050 
+eps_a_R        0.0100   0.0074  0.0024   invg 0.0050 
+eps_uip_G      0.0100   0.0029  0.0003   invg 0.0050 
+eps_uip_R      0.0100   0.0064  0.0010   invg 0.0050 
+
+
+Log data density [Laplace approximation] is 2250.220631.
+
+Estimation::mcmc: One Chain mode.
+Estimation::mcmc: Old metropolis.log file successfully erased!
+Estimation::mcmc: Creation of a new metropolis.log file.
+Estimation::mcmc: Initialization at the posterior mode.
+
+Estimation::mcmc: Write details about the MCMC... Ok!
+Estimation::mcmc: Details about the MCMC are available in PCP_D_Est/metropolis/PCP_D_Est_mh_history_0.mat
+
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dyn_first_order_solver')" style="font-weight:bold">dyn_first_order_solver</a>
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stochastic_solvers', '/usr/lib/dynare/matlab/stochastic_solvers.m', 251)" style="font-weight:bold">stochastic_solvers</a> (<a href="matlab: opentoline('/usr/lib/dynare/matlab/stochastic_solvers.m',251,0)">line 251</a>)
+        [dr,info] = dyn_first_order_solver(jacobia_,M_,dr,options_,task);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('resol', '/usr/lib/dynare/matlab/resol.m', 119)" style="font-weight:bold">resol</a> (<a href="matlab: opentoline('/usr/lib/dynare/matlab/resol.m',119,0)">line 119</a>)
+    [dr,info] = stochastic_solvers(dr,check_flag,M,options,oo);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('compute_decision_rules', '/usr/lib/dynare/matlab/compute_decision_rules.m', 34)" style="font-weight:bold">compute_decision_rules</a> (<a href="matlab: opentoline('/usr/lib/dynare/matlab/compute_decision_rules.m',34,0)">line 34</a>)
+    [dr,info,M_,oo_] = resol(0,M_,options_,oo_);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_resolve', '/usr/lib/dynare/matlab/dynare_resolve.m', 36)" style="font-weight:bold">dynare_resolve</a> (<a href="matlab: opentoline('/usr/lib/dynare/matlab/dynare_resolve.m',36,0)">line 36</a>)
+[dr,info,M_,oo_] =compute_decision_rules(M_,options_,oo_);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dsge_likelihood', '/usr/lib/dynare/matlab/dsge_likelihood.m', 211)" style="font-weight:bold">dsge_likelihood</a> (<a href="matlab: opentoline('/usr/lib/dynare/matlab/dsge_likelihood.m',211,0)">line 211</a>)
+    [T,R,SteadyState,info,Model,DynareResults] = dynare_resolve(Model,DynareOptions,DynareResults,'restrict');
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('posterior_sampler_iteration', '/usr/lib/dynare/matlab/posterior_sampler_iteration.m', 64)" style="font-weight:bold">posterior_sampler_iteration</a> (<a href="matlab: opentoline('/usr/lib/dynare/matlab/posterior_sampler_iteration.m',64,0)">line 64</a>)
+            logpost = - feval(TargetFun, par(:),varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('posterior_sampler_core', '/usr/lib/dynare/matlab/posterior_sampler_core.m', 197)" style="font-weight:bold">posterior_sampler_core</a> (<a href="matlab: opentoline('/usr/lib/dynare/matlab/posterior_sampler_core.m',197,0)">line 197</a>)
+        [par, logpost, accepted, neval] = posterior_sampler_iteration(TargetFun, last_draw(curr_block,:), last_posterior(curr_block), sampler_options,dataset_,dataset_info,options_,M_,estim_params_,bayestopt_,mh_bounds,oo_);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('posterior_sampler', '/usr/lib/dynare/matlab/posterior_sampler.m', 121)" style="font-weight:bold">posterior_sampler</a> (<a href="matlab: opentoline('/usr/lib/dynare/matlab/posterior_sampler.m',121,0)">line 121</a>)
+    fout = posterior_sampler_core(localVars, fblck, nblck, 0);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', '/usr/lib/dynare/matlab/dynare_estimation_1.m', 471)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('/usr/lib/dynare/matlab/dynare_estimation_1.m',471,0)">line 471</a>)
+            posterior_sampler(objective_function,posterior_sampler_options.proposal_distribution,xparam1,posterior_sampler_options,bounds,dataset_,dataset_info,options_,M_,estim_params_,bayestopt_,oo_);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', '/usr/lib/dynare/matlab/dynare_estimation.m', 118)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('/usr/lib/dynare/matlab/dynare_estimation.m',118,0)">line 118</a>)
+    dynare_estimation_1(var_list,dname);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PCP_D_Est.driver', '/home/stefan/Dropbox/Stefan/UNI/PhD/DCP Determinacy/Code/Final Code/Estimation/PCP Model/gamma_0_7/New Folder/+PCP_D_Est/driver.m', 1299)" style="font-weight:bold">PCP_D_Est.driver</a> (<a href="matlab: opentoline('/home/stefan/Dropbox/Stefan/UNI/PhD/DCP Determinacy/Code/Final Code/Estimation/PCP Model/gamma_0_7/New Folder/+PCP_D_Est/driver.m',1299,0)">line 1299</a>)
+oo_recursive_=dynare_estimation(var_list_);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', '/usr/lib/dynare/matlab/dynare.m', 289)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('/usr/lib/dynare/matlab/dynare.m',289,0)">line 289</a>)
+    evalin('base',[fname '.driver']);
+} 
+clear
+clc
+dynare PCP_D

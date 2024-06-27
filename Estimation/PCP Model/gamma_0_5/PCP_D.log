@@ -1,0 +1,381 @@
+Starting Dynare (version 5.3).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 114 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 2).
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+STEADY-STATE RESULTS:
+
+p_UU         		 0
+p_GG         		 0
+p_RR         		 0
+p_UG         		 0
+p_UR         		 0
+p_GU         		 0
+p_GR         		 0
+p_RG         		 0
+p_RU         		 0
+p_UU_reset   		 0
+p_GG_reset   		 0
+p_RR_reset   		 0
+c_U          		 -0.120511
+c_R          		 -0.120511
+c_G          		 -0.120511
+pi_U         		 0
+pi_R         		 0
+pi_G         		 0
+i_U          		 0.010101
+i_R          		 0.010101
+i_G          		 0.010101
+i_U_G        		 0.010101
+i_U_R        		 0.010101
+B_U          		 0
+B_G          		 0
+B_R          		 0
+w_U          		 -0.988984
+w_G          		 -0.988984
+w_R          		 -0.988984
+n_U          		 -0.517822
+n_G          		 -0.517822
+n_R          		 -0.517822
+mc_U         		 -0.693147
+mc_G         		 -0.693147
+mc_R         		 -0.693147
+x_U          		 -0.813659
+x_G          		 -0.813659
+x_R          		 -0.813659
+y_U          		 0.284954
+y_R          		 0.284954
+y_G          		 0.284954
+y_UU         		 -0.408193
+y_UG         		 -1.10134
+y_UR         		 -1.10134
+y_GG         		 -0.408193
+y_GU         		 -1.10134
+y_GR         		 -1.10134
+y_RR         		 -0.408193
+y_RU         		 -1.10134
+y_RG         		 -1.10134
+Profit_U     		 0.66485
+Profit_G     		 0.66485
+Profit_R     		 0.66485
+q_G          		 0
+q_R          		 0
+eps_M_U      		 0
+eps_M_G      		 0
+eps_M_R      		 0
+a_U          		 1
+a_G          		 1
+a_R          		 1
+uip_G        		 0
+uip_R        		 0
+y_U_UG       		 -1.10134
+y_G_UG       		 -1.10134
+p_U_UG       		 0
+p_G_UG       		 0
+p_U_UG_reset 		 0
+p_G_UG_reset 		 0
+y_U_UR       		 -1.10134
+y_R_UR       		 -1.10134
+p_U_UR       		 0
+p_R_UR       		 0
+p_U_UR_reset 		 0
+p_R_UR_reset 		 0
+y_U_GU       		 -1.10134
+y_G_GU       		 -1.10134
+p_U_GU       		 0
+p_G_GU       		 0
+p_U_GU_reset 		 0
+p_G_GU_reset 		 0
+y_R_GR       		 -1.10134
+y_G_GR       		 -1.10134
+y_U_GR       		 -1.10134
+p_R_GR       		 0
+p_G_GR       		 0
+p_U_GR       		 0
+p_R_GR_reset 		 0
+p_G_GR_reset 		 0
+p_U_GR_reset 		 0
+y_U_RU       		 -1.10134
+y_R_RU       		 -1.10134
+p_U_RU       		 0
+p_R_RU       		 0
+p_U_RU_reset 		 0
+p_R_RU_reset 		 0
+y_R_RG       		 -1.10134
+y_G_RG       		 -1.10134
+y_U_RG       		 -1.10134
+p_R_RG       		 0
+p_G_RG       		 0
+p_U_RG       		 0
+p_R_RG_reset 		 0
+p_G_RG_reset 		 0
+p_U_RG_reset 		 0
+d_y_U        		 0
+d_i_U        		 0
+d_pi_U       		 0
+d_w_U        		 0
+d_y_G        		 0
+d_i_G        		 0
+d_pi_G       		 0
+d_w_G        		 0
+d_q_G        		 0
+
+You did not declare endogenous variables after the estimation/calib_smoother command.
+Initial value of the log posterior (or likelihood): 2198.0268
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      26   -2.198027e+03    0.000e+00    5.089e+04
+    1      56   -2.228500e+03    0.000e+00    1.679e+04    3.441e-01
+Objective function returned Inf; trying a new point...
+    2      84   -2.241324e+03    0.000e+00    1.090e+04    5.838e-01
+    3     112   -2.253203e+03    0.000e+00    9.152e+03    4.846e-01
+    4     140   -2.257836e+03    0.000e+00    1.678e+04    3.539e-01
+    5     167   -2.283582e+03    0.000e+00    7.436e+03    3.175e-01
+    6     195   -2.286861e+03    0.000e+00    5.096e+03    1.623e-01
+    7     224   -2.289847e+03    0.000e+00    5.675e+03    2.706e-01
+    8     253   -2.293082e+03    0.000e+00    2.644e+03    4.730e-01
+Objective function returned Inf; trying a new point...
+    9     281   -2.299272e+03    0.000e+00    6.208e+03    7.049e-01
+Objective function returned Inf; trying a new point...
+   10     309   -2.303907e+03    0.000e+00    1.639e+04    5.003e-01
+Objective function returned Inf; trying a new point...
+   11     337   -2.311215e+03    0.000e+00    1.154e+04    6.027e-01
+   12     364   -2.313214e+03    0.000e+00    1.260e+04    4.442e-01
+   13     392   -2.335255e+03    0.000e+00    7.202e+03    7.522e-01
+   14     419   -2.339462e+03    0.000e+00    2.470e+04    4.379e-01
+   15     446   -2.346368e+03    0.000e+00    2.059e+04    4.857e-01
+   16     474   -2.350799e+03    0.000e+00    1.546e+04    2.554e-01
+   17     502   -2.355504e+03    0.000e+00    8.447e+03    3.194e-01
+   18     529   -2.355810e+03    0.000e+00    2.590e+03    2.159e-01
+   19     557   -2.356055e+03    0.000e+00    2.847e+03    9.396e-02
+   20     586   -2.358921e+03    0.000e+00    2.253e+03    2.230e-01
+   21     615   -2.359597e+03    0.000e+00    5.551e+03    7.425e-02
+   22     644   -2.360186e+03    0.000e+00    4.374e+03    8.630e-02
+   23     673   -2.360372e+03    0.000e+00    4.397e+03    5.957e-02
+   24     702   -2.360502e+03    0.000e+00    2.998e+03    4.732e-02
+   25     733   -2.360510e+03    0.000e+00    3.744e+02    3.901e-02
+   26     760   -2.360541e+03    0.000e+00    9.184e+02    2.422e-02
+   27     792   -2.360760e+03    0.000e+00    2.538e+02    3.577e-02
+   28     821   -2.360776e+03    0.000e+00    4.620e+02    7.215e-03
+   29     851   -2.360835e+03    0.000e+00    2.014e+02    2.500e-02
+   30     880   -2.360839e+03    0.000e+00    2.546e+02    5.251e-03
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+   31     910   -2.360920e+03    0.000e+00    1.282e+02    8.871e-03
+   32     939   -2.360925e+03    0.000e+00    2.190e+02    6.212e-03
+Objective function returned Inf; trying a new point...
+   33     969   -2.360941e+03    0.000e+00    1.533e+02    1.184e-02
+   34     996   -2.360948e+03    0.000e+00    1.044e+02    2.129e-02
+   35    1027   -2.360957e+03    0.000e+00    1.224e+02    8.924e-03
+   36    1055   -2.360960e+03    0.000e+00    1.272e+02    4.353e-03
+   37    1086   -2.360966e+03    0.000e+00    6.498e+01    5.661e-03
+   38    1113   -2.360969e+03    0.000e+00    1.063e+02    3.822e-03
+   39    1143   -2.360982e+03    0.000e+00    1.312e+02    1.559e-02
+   40    1171   -2.360981e+03    0.000e+00    1.308e+02    3.528e-03
+   41    1202   -2.360982e+03    0.000e+00    3.017e+00    8.029e-03
+   42    1237   -2.360993e+03    0.000e+00    1.476e+02    9.949e-03
+   43    1269   -2.360996e+03    0.000e+00    9.256e+01    1.412e-02
+   44    1298   -2.360996e+03    0.000e+00    8.730e+01    1.638e-03
+   45    1329   -2.360999e+03    0.000e+00    6.302e+01    2.918e-03
+   46    1356   -2.361000e+03    0.000e+00    3.719e+01    3.642e-03
+   47    1388   -2.361000e+03    0.000e+00    3.518e+01    4.075e-03
+   48    1415   -2.361000e+03    0.000e+00    3.218e+01    1.788e-03
+   49    1445   -2.361001e+03    0.000e+00    4.100e+01    3.102e-03
+   50    1477   -2.361001e+03    0.000e+00    1.807e+01    1.995e-03
+   51    1506   -2.361001e+03    0.000e+00    1.486e+01    1.168e-03
+   52    1536   -2.361001e+03    0.000e+00    1.576e+01    2.359e-03
+   53    1568   -2.361001e+03    0.000e+00    9.645e+00    7.166e-04
+   54    1597   -2.361001e+03    0.000e+00    9.640e+00    1.618e-04
+   55    1624   -2.361001e+03    0.000e+00    6.792e+00    1.078e-03
+   56    1650   -2.361001e+03    0.000e+00    1.419e+00    4.054e-04
+   57    1676   -2.361001e+03    0.000e+00    5.251e-01    1.468e-04
+   58    1702   -2.361001e+03    0.000e+00    8.817e-02    8.800e-05
+   59    1728   -2.361001e+03    0.000e+00    1.588e-01    5.012e-05
+   60    1754   -2.361001e+03    0.000e+00    4.675e-02    3.019e-05
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+   61    1787   -2.361001e+03    0.000e+00    3.998e-03    1.374e-05
+   62    1816   -2.361001e+03    0.000e+00    5.829e-03    1.702e-06
+
+<a href = "matlab: helpview('optim','feasible_better_objective','CSHelpWindow');">Feasible point with lower objective function value found</a>.
+
+
+<a href = "matlab: helpview('optim','local_min_poss_with_constr','CSHelpWindow');">Local minimum possible. Constraints satisfied</a>.
+
+fmincon stopped because the <a href = "matlab: helpview('optim','norm_curr_step_simple_fminconip','CSHelpWindow');">size of the current step</a> is less than
+the value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a> and constraints are 
+satisfied to within the value of the <a href = "matlab: helpview('optim','constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:sqpLineSearch:Exit2basic','fmincon'},{'optimlib:sqpLineSearch:Exit2detailed','1.000000e-06','0.000000e+00','1.000000e-06'},true,true);;">stopping criteria details</a>>
+
+Final value of minus the log posterior (or likelihood):-2361.001344 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+           prior mean     mode    s.d.  prior pstdev
+
+phi_pi_U       1.5000   1.4228  0.2483   gamm 0.2000 
+phi_pi_G       1.5000   1.4746  0.1675   gamm 0.2000 
+phi_Y_U        0.2500   0.6535  0.0797   norm 0.1000 
+phi_Y_G        0.2500   0.6428  0.0714   norm 0.1000 
+theta_p_U      0.7500   0.7343  0.0452   beta 0.1000 
+theta_W_U      0.7500   0.6986  0.0849   beta 0.1000 
+theta_p_G      0.7500   0.7599  0.0391   beta 0.1000 
+theta_W_G      0.7500   0.6833  0.0844   beta 0.1000 
+rho_m_U        0.7500   0.5264  0.0604   beta 0.1000 
+rho_m_G        0.7500   0.5481  0.0596   beta 0.1000 
+rho_eps_U      0.7500   0.9117  0.0332   beta 0.1000 
+rho_eps_G      0.7500   0.8794  0.0480   beta 0.1000 
+rho_uip_G      0.7500   0.9866  0.0036   beta 0.1000 
+rho_a_U        0.7500   0.8459  0.0494   beta 0.1000 
+rho_a_G        0.7500   0.8701  0.0425   beta 0.1000 
+
+standard deviation of shocks
+           prior mean     mode    s.d.  prior pstdev
+
+eps_i_U        0.0100   0.0028  0.0003   invg 0.0050 
+eps_i_G        0.0100   0.0025  0.0002   invg 0.0050 
+eps_i_R        0.0100   0.0067  0.0007   invg 0.0050 
+eps_R          0.0100   0.0077  0.0013   invg 0.0050 
+eps_G          0.0100   0.0113  0.0012   invg 0.0050 
+eps_a_U        0.0100   0.0070  0.0018   invg 0.0050 
+eps_a_G        0.0100   0.0074  0.0022   invg 0.0050 
+eps_a_R        0.0100   0.0074  0.0023   invg 0.0050 
+eps_uip_G      0.0100   0.0028  0.0003   invg 0.0050 
+eps_uip_R      0.0100   0.0058  0.0011   invg 0.0050 
+
+
+Log data density [Laplace approximation] is 2264.550749.
+
+Estimation::mcmc: One Chain mode.
+Estimation::mcmc: Old mh-files successfully erased!
+Estimation::mcmc: Old metropolis.log file successfully erased!
+Estimation::mcmc: Creation of a new metropolis.log file.
+Estimation::mcmc: Initialization at the posterior mode.
+
+Estimation::mcmc: Write details about the MCMC... Ok!
+Estimation::mcmc: Details about the MCMC are available in PCP_D/metropolis/PCP_D_mh_history_0.mat
+
+
+Estimation::mcmc: Number of mh files: 2 per block.
+Estimation::mcmc: Total number of generated files: 2.
+Estimation::mcmc: Total number of iterations: 500000.
+Estimation::mcmc: Current acceptance ratio per chain: 
+                                                       Chain  1: 47.2564%
+Estimation::mcmc: Total number of MH draws per chain: 500000.
+Estimation::mcmc: Total number of generated MH files: 2.
+Estimation::mcmc: I'll use mh-files 1 to 2.
+Estimation::mcmc: In MH-file number 1 I'll start at line 250001.
+Estimation::mcmc: Finally I keep 250000 draws per chain.
+
+
+
+MCMC Inefficiency factors per block
+Parameter          Block 1
+SE_eps_i_U         199.737
+SE_eps_i_G         197.537
+SE_eps_i_R         234.787
+SE_eps_R           103.713
+SE_eps_G           209.111
+SE_eps_a_U         561.149
+SE_eps_a_G         575.921
+SE_eps_a_R         372.384
+SE_eps_uip_G       283.317
+SE_eps_uip_R       103.957
+phi_pi_U           159.119
+phi_pi_G           259.026
+phi_Y_U            224.653
+phi_Y_G            235.802
+theta_p_U          265.316
+theta_W_U          264.984
+theta_p_G          344.131
+theta_W_G          195.849
+rho_m_U            212.986
+rho_m_G            238.738
+rho_eps_U          531.226
+rho_eps_G          285.034
+rho_uip_G          223.730
+rho_a_U            218.065
+rho_a_G            293.447
+
+
+Geweke (1992) Convergence Tests, based on means of draws 250000 to 300000 vs 375000 to 500000.
+p-values are for Chi2-test for equality of means.
+Parameter            Post. Mean        Post. Std   p-val No Taper   p-val 4% Taper   p-val 8% Taper  p-val 15% Taper
+SE_eps_i_U                0.003            0.000            0.000            0.153            0.172            0.184
+SE_eps_i_G                0.002            0.000            0.439            0.954            0.948            0.944
+SE_eps_i_R                0.005            0.001            0.000            0.062            0.062            0.037
+SE_eps_R                  0.004            0.001            0.000            0.406            0.365            0.328
+SE_eps_G                  0.012            0.001            0.000            0.233            0.246            0.230
+SE_eps_a_U                0.024            0.003            0.000            0.036            0.077            0.121
+SE_eps_a_G                0.027            0.003            0.000            0.022            0.044            0.051
+SE_eps_a_R                0.009            0.003            0.000            0.769            0.781            0.777
+SE_eps_uip_G              0.003            0.000            0.000            0.615            0.623            0.617
+SE_eps_uip_R              0.004            0.001            0.000            0.295            0.317            0.297
+phi_pi_U                  1.139            0.161            0.000            0.557            0.518            0.512
+phi_pi_G                  1.265            0.168            0.000            0.692            0.706            0.693
+phi_Y_U                   0.624            0.073            0.000            0.023            0.023            0.017
+phi_Y_G                   0.622            0.070            0.000            0.247            0.237            0.169
+theta_p_U                 0.824            0.023            0.000            0.263            0.338            0.392
+theta_W_U                 0.688            0.089            0.000            0.122            0.158            0.162
+theta_p_G                 0.827            0.026            0.000            0.305            0.369            0.395
+theta_W_G                 0.750            0.075            0.000            0.719            0.732            0.727
+rho_m_U                   0.537            0.060            0.000            0.537            0.554            0.583
+rho_m_G                   0.536            0.063            0.000            0.785            0.799            0.784
+rho_eps_U                 0.873            0.048            0.000            0.865            0.889            0.900
+rho_eps_G                 0.854            0.049            0.000            0.001            0.001            0.002
+rho_uip_G                 0.986            0.004            0.000            0.107            0.100            0.086
+rho_a_U                   0.713            0.043            0.000            0.825            0.847            0.851
+rho_a_G                   0.752            0.041            0.005            0.900            0.914            0.923
+
+
+Estimation::marginal density: I'm computing the posterior mean and covariance...  Done!
+Estimation::marginal density: I'm computing the posterior log marginal density (modified harmonic mean)... Done!
+
+
+ESTIMATION RESULTS
+
+Log data density is 2273.607415.
+
+parameters
+             prior mean   post. mean        90% HPD interval    prior       pstdev
+
+phi_pi_U          1.500       1.1451      0.8845      1.4059     gamm       0.2000
+phi_pi_G          1.500       1.2683      0.9990      1.5368     gamm       0.2000
+phi_Y_U           0.250       0.6271      0.5064      0.7465     norm       0.1000
+phi_Y_G           0.250       0.6211      0.5091      0.7370     norm       0.1000
+theta_p_U         0.750       0.8249      0.7890      0.8622     beta       0.1000
+theta_W_U         0.750       0.6881      0.5463      0.8325     beta       0.1000
+theta_p_G         0.750       0.8271      0.7848      0.8683     beta       0.1000
+theta_W_G         0.750       0.7510      0.6352      0.8690     beta       0.1000
+rho_m_U           0.750       0.5387      0.4438      0.6373     beta       0.1000
+rho_m_G           0.750       0.5359      0.4337      0.6407     beta       0.1000
+rho_eps_U         0.750       0.8713      0.7959      0.9484     beta       0.1000
+rho_eps_G         0.750       0.8551      0.7806      0.9333     beta       0.1000
+rho_uip_G         0.750       0.9862      0.9803      0.9923     beta       0.1000
+rho_a_U           0.750       0.7135      0.6436      0.7807     beta       0.1000
+rho_a_G           0.750       0.7513      0.6862      0.8204     beta       0.1000
+
+standard deviation of shocks
+             prior mean   post. mean        90% HPD interval    prior       pstdev
+
+eps_i_U           0.010       0.0027      0.0022      0.0031     invg       0.0050
+eps_i_G           0.010       0.0025      0.0021      0.0029     invg       0.0050
+eps_i_R           0.010       0.0045      0.0036      0.0054     invg       0.0050
+eps_R             0.010       0.0045      0.0033      0.0056     invg       0.0050
+eps_G             0.010       0.0120      0.0100      0.0139     invg       0.0050
+eps_a_U           0.010       0.0245      0.0200      0.0293     invg       0.0050
+eps_a_G           0.010       0.0267      0.0211      0.0323     invg       0.0050
+eps_a_R           0.010       0.0094      0.0047      0.0140     invg       0.0050
+eps_uip_G         0.010       0.0031      0.0025      0.0036     invg       0.0050
+eps_uip_R         0.010       0.0044      0.0033      0.0054     invg       0.0050
+Total computing time : 3h18m41s

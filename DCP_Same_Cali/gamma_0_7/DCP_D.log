@@ -1,0 +1,248 @@
+Starting Dynare (version 5.0).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 105 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+[Warning: The value of local variables may have been changed to match the globals.  Future versions of MATLAB will require that you declare a
+variable to be global before you use that variable.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('DCP_D.driver', '/home/stefan/Dropbox/Stefan/UNI/PhD/DCP Determinacy/Code/Final Code_June/DCP_Same_Cali/gamma_0_7/+DCP_D/driver.m', 15)" style="font-weight:bold">DCP_D.driver</a> (<a href="matlab: opentoline('/home/stefan/Dropbox/Stefan/UNI/PhD/DCP Determinacy/Code/Final Code_June/DCP_Same_Cali/gamma_0_7/+DCP_D/driver.m',15,0)">line 15</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', '/usr/lib/dynare/matlab/dynare.m', 289)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('/usr/lib/dynare/matlab/dynare.m',289,0)">line 289</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Det_Ana_Same_Cali', '/home/stefan/Dropbox/Stefan/UNI/PhD/DCP Determinacy/Code/Final Code_June/Det_Ana_Same_Cali.m', 62)" style="font-weight:bold">Det_Ana_Same_Cali</a> (<a href="matlab: opentoline('/home/stefan/Dropbox/Stefan/UNI/PhD/DCP Determinacy/Code/Final Code_June/Det_Ana_Same_Cali.m',62,0)">line 62</a>)] 
+[Warning: Some of the parameters have no value (rho_eps_U, rho_eps_G, rho_eps_R, rho_uip_G, rho_uip_R) when using steady. If these parameters
+are not initialized in a steadystate file or a steady_state_model-block, Dynare may not be able to solve the model. Note that simul,
+perfect_foresight_setup, and perfect_foresight_solver do not automatically call the steady state file.] 
+
+STEADY-STATE RESULTS:
+
+p_UU         		 0
+p_GG         		 0
+p_RR         		 0
+p_UG         		 0
+p_UR         		 0
+p_GU         		 0
+p_GR         		 0
+p_RG         		 0
+p_RU         		 0
+p_UU_reset   		 0
+p_GG_reset   		 0
+p_RR_reset   		 0
+c_U          		 -0.120511
+c_R          		 -0.120511
+c_G          		 -0.120511
+pi_U         		 0
+pi_R         		 0
+pi_G         		 0
+i_U          		 0.010101
+i_R          		 0.010101
+i_G          		 0.010101
+i_U_G        		 0.010101
+i_U_R        		 0.010101
+B_U          		 0
+B_G          		 0
+B_R          		 0
+w_U          		 -0.988984
+w_G          		 -0.988984
+w_R          		 -0.988984
+n_U          		 -0.517822
+n_G          		 -0.517822
+n_R          		 -0.517822
+mc_U         		 -0.693147
+mc_G         		 -0.693147
+mc_R         		 -0.693147
+x_U          		 -0.813659
+x_G          		 -0.813659
+x_R          		 -0.813659
+y_U          		 0.284954
+y_R          		 0.284954
+y_G          		 0.284954
+y_UU         		 -0.0717212
+y_UG         		 -1.61217
+y_UR         		 -1.61217
+y_GG         		 -0.0717212
+y_GU         		 -1.61217
+y_GR         		 -1.61217
+y_RR         		 -0.0717212
+y_RU         		 -1.61217
+y_RG         		 -1.61217
+Profit_U     		 0.66485
+Profit_G     		 0.66485
+Profit_R     		 0.66485
+q_G          		 0
+q_R          		 0
+eps_M_U      		 0
+eps_M_G      		 0
+eps_M_R      		 0
+a_U          		 1
+a_G          		 1
+a_R          		 1
+uip_G        		 0
+uip_R        		 0
+y_U_UG       		 -1.61217
+y_G_UG       		 -1.61217
+p_U_UG       		 0
+p_G_UG       		 0
+p_U_UG_reset 		 0
+p_G_UG_reset 		 0
+y_U_UR       		 -1.61217
+y_R_UR       		 -1.61217
+p_U_UR       		 0
+p_R_UR       		 0
+p_U_UR_reset 		 0
+p_R_UR_reset 		 0
+y_U_GU       		 -1.61217
+y_G_GU       		 -1.61217
+p_U_GU       		 0
+p_G_GU       		 0
+p_U_GU_reset 		 0
+p_G_GU_reset 		 0
+y_R_GR       		 -1.61217
+y_G_GR       		 -1.61217
+y_U_GR       		 -1.61217
+p_R_GR       		 0
+p_G_GR       		 0
+p_U_GR       		 0
+p_R_GR_reset 		 0
+p_G_GR_reset 		 0
+p_U_GR_reset 		 0
+y_U_RU       		 -1.61217
+y_R_RU       		 -1.61217
+p_U_RU       		 0
+p_R_RU       		 0
+p_U_RU_reset 		 0
+p_R_RU_reset 		 0
+y_R_RG       		 -1.61217
+y_G_RG       		 -1.61217
+y_U_RG       		 -1.61217
+p_R_RG       		 0
+p_G_RG       		 0
+p_U_RG       		 0
+p_R_RG_reset 		 0
+p_G_RG_reset 		 0
+p_U_RG_reset 		 0
+[Warning: Some of the parameters have no value (rho_eps_U, rho_eps_G, rho_eps_R, rho_uip_G, rho_uip_R) when using stoch_simul. If these
+parameters are not initialized in a steadystate file or a steady_state_model-block, Dynare may not be able to solve the model. Note that simul,
+perfect_foresight_setup, and perfect_foresight_solver do not automatically call the steady state file.] 
+
+MODEL SUMMARY
+
+  Number of variables:         105
+  Number of stochastic shocks: 10
+  Number of state variables:   38
+  Number of jumpers:           28
+  Number of static variables:  45
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables      eps_i_U    eps_i_G    eps_i_R      eps_R      eps_G    eps_a_U    eps_a_G    eps_a_R  eps_uip_G  eps_uip_R
+eps_i_U       0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_i_G       0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_i_R       0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_R         0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_G         0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_a_U       0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_a_G       0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_a_R       0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_uip_G     0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+eps_uip_R     0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                pi_G            pi_U            pi_R             y_G             y_U             y_R             i_G             i_U             i_R
+Constant                           0               0               0        0.284954        0.284954        0.284954        0.010101        0.010101        0.010101
+p_UU(-1)                    0.065077        0.699087        0.074335        0.160529       -0.918619        0.182919        0.058841        0.466902        0.067184
+p_GG(-1)                    0.601122       -0.000004        0.000459       -0.778575        0.178466        0.165669        0.402181        0.011151        0.010698
+p_RR(-1)                    0.001644        0.002189        0.550389        0.159892        0.164151       -0.716447        0.011226        0.011901        0.368014
+i_U(-1)                     0.219733       -0.017633        0.238504       -0.018246       -0.697004       -0.024822        0.163659        0.443213        0.177326
+i_R(-1)                     0.011620        0.010333       -0.249599        0.119015        0.124808       -0.531916        0.016153        0.015551        0.279556
+i_G(-1)                    -0.232734        0.006415        0.009326       -0.542379        0.129707        0.115989        0.291551        0.012918        0.014244
+B_G(-1)                     0.005908       -0.000896        0.000698       -0.005499        0.002221       -0.001322        0.004087       -0.000533        0.000441
+B_R(-1)                     0.000621       -0.000960        0.006276       -0.000984        0.002449       -0.006509        0.000404       -0.000567        0.004300
+eps_M_U(-1)                -0.380610        0.042554       -0.418179        0.049002        1.225535        0.078488       -0.282395       -0.391489       -0.308729
+eps_M_G(-1)                 0.413178       -0.015735       -0.024249        0.958928       -0.202198       -0.173396       -0.130184       -0.024439       -0.029024
+eps_M_R(-1)                -0.027567       -0.023590        0.448724       -0.175198       -0.187509        0.924780       -0.031625       -0.029412       -0.105658
+a_U(-1)                    -0.022377       -0.037720       -0.026324       -0.054227       -0.124853       -0.052500       -0.020172       -0.036093       -0.023024
+a_G(-1)                    -0.078023       -0.014904       -0.020321       -0.056578       -0.074753       -0.062751       -0.062053       -0.015850       -0.019163
+a_R(-1)                    -0.026045       -0.022815       -0.134577       -0.086654       -0.093745        0.041806       -0.024950       -0.022971       -0.098320
+uip_G(-1)                   0.241666       -0.006929       -0.009608        0.268396       -0.216999       -0.202598        0.198024       -0.018759       -0.019868
+uip_R(-1)                  -0.012019       -0.011081        0.259074       -0.205811       -0.211868        0.257900       -0.021877       -0.021553        0.210424
+p_U_UG(-1)                  0.084600        0.008483       -0.028879        0.032146       -0.154690        0.066193        0.065459       -0.003306       -0.017522
+p_U_UR(-1)                 -0.024997        0.010525        0.093589        0.068542       -0.150357        0.011591       -0.014464       -0.001503        0.070916
+p_U_GU(-1)                  0.053047        0.122092        0.029633       -0.198546        0.041729        0.018069        0.027376        0.094177        0.023354
+p_U_GR(-1)                  0.027092        0.001320        0.112292       -0.173699        0.042316        0.028420        0.009463        0.003634        0.085995
+p_U_RU(-1)                  0.018424        0.104038        0.039450        0.016108        0.055776       -0.180845        0.014825        0.081514        0.018284
+p_U_RG(-1)                  0.090910       -0.000419        0.019171        0.060151        0.031846       -0.168878        0.071942        0.001676        0.003824
+w_U(-1)                     0.015446        0.028426        0.018165        0.007401        0.006493        0.005296        0.012047        0.021725        0.013955
+w_G(-1)                     0.049777        0.009626        0.013530       -0.034993        0.016095        0.008315        0.035146        0.008226        0.010667
+w_R(-1)                     0.015786        0.013311        0.075213        0.018632        0.023062       -0.081427        0.013004        0.011425        0.051320
+eps_i_U                    -0.761221        0.085108       -0.836358        0.098005        2.451069        0.156976       -0.564790       -0.782978       -0.617457
+eps_i_G                     0.826356       -0.031470       -0.048498        1.917855       -0.404397       -0.346792       -0.260367       -0.048877       -0.058048
+eps_i_R                    -0.055134       -0.047181        0.897448       -0.350395       -0.375018        1.849560       -0.063250       -0.058824       -0.211317
+eps_R                      -0.008245       -0.008011        0.281673       -0.245382       -0.250217        0.317769       -0.021520       -0.021646        0.231115
+eps_G                       0.267444       -0.004486       -0.005555        0.320350       -0.252081       -0.240288        0.220605       -0.019120       -0.019184
+eps_a_U                    -0.027972       -0.047150       -0.032905       -0.067784       -0.156066       -0.065625       -0.025215       -0.045117       -0.028780
+eps_a_G                    -0.097528       -0.018629       -0.025401       -0.070722       -0.093441       -0.078438       -0.077566       -0.019812       -0.023953
+eps_a_R                    -0.032556       -0.028519       -0.168222       -0.108318       -0.117182        0.052257       -0.031187       -0.028713       -0.122900
+eps_uip_G                   0.483332       -0.013857       -0.019215        0.536792       -0.433997       -0.405197        0.396049       -0.037518       -0.039736
+eps_uip_R                  -0.024038       -0.022162        0.518147       -0.411623       -0.423736        0.515800       -0.043755       -0.043105        0.420848
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+pi_G              0.000000        0.000000        0.000000             NaN             NaN
+pi_U              0.000000        0.000000        0.000000             NaN             NaN
+pi_R              0.000000        0.000000        0.000000             NaN             NaN
+y_G               0.284954        0.000000        0.000000             NaN             NaN
+y_U               0.284954        0.000000        0.000000             NaN             NaN
+y_R               0.284954        0.000000        0.000000             NaN             NaN
+i_G               0.010101        0.000000        0.000000             NaN             NaN
+i_U               0.010101        0.000000        0.000000             NaN             NaN
+i_R               0.010101        0.000000        0.000000             NaN             NaN
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE      pi_G    pi_U    pi_R     y_G     y_U     y_R     i_G     i_U     i_R
+pi_G           NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN
+pi_U           NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN
+pi_R           NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN
+y_G            NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN
+y_U            NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN
+y_R            NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN
+i_G            NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN
+i_U            NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN
+i_R            NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE         1       2       3       4       5
+pi_G           NaN     NaN     NaN     NaN     NaN
+pi_U           NaN     NaN     NaN     NaN     NaN
+pi_R           NaN     NaN     NaN     NaN     NaN
+y_G            NaN     NaN     NaN     NaN     NaN
+y_U            NaN     NaN     NaN     NaN     NaN
+y_R            NaN     NaN     NaN     NaN     NaN
+i_G            NaN     NaN     NaN     NaN     NaN
+i_U            NaN     NaN     NaN     NaN     NaN
+i_R            NaN     NaN     NaN     NaN     NaN
+
+
+
+VARIANCE DECOMPOSITION SIMULATING ONE SHOCK AT A TIME (in percent)
+                 eps_i_U           eps_i_G           eps_i_R             eps_R             eps_G           eps_a_U           eps_a_G           eps_a_R         eps_uip_G         eps_uip_R  Tot. lin. contr.
+pi_G                 NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN
+pi_U                 NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN
+pi_R                 NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN
+y_G                  NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN
+y_U                  NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN
+y_R                  NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN
+i_G                  NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN
+i_U                  NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN
+i_R                  NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN               NaN
+Note: numbers do not add up to 100 due to non-zero correlation of simulated shocks in small samples
+
+Total computing time : 0h00m00s
+Note: warning(s) encountered in MATLAB/Octave code
