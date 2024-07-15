@@ -417,3 +417,113 @@ saveas(figure_handle, fullfile(PathForPlot_Combined,filename)); % strrep replace
 % Close the figure
 close(figure_handle);
 
+%% Same Cali all in one plot
+
+clear
+clc
+
+home = pwd;
+
+
+PathOfFiles = sprintf('%s/Plots/SameCali/%s',home);
+
+% Define which figures to include in plot
+plot_paths = {sprintf('%s/DCP/gamma_0_5/DCP_gamma_0_5.fig',PathOfFiles),...
+    sprintf('%s/DCP/gamma_0_7/DCP_gamma_0_7.fig',PathOfFiles),...
+    sprintf('%s/PCP/gamma_0_5/PCP_gamma_0_5.fig',PathOfFiles),...
+    sprintf('%s/PCP/gamma_0_7/PCP_gamma_0_7.fig',PathOfFiles),...
+    sprintf('%s/LCP/gamma_0_5/LCP_gamma_0_5.fig',PathOfFiles),...
+    sprintf('%s/LCP/gamma_0_7/LCP_gamma_0_7.fig',PathOfFiles)};
+
+
+% Open full screen figure
+figure('units','normalized','outerposition',[0 0 1 1])
+
+% Set tiled layout with according size (rows, columns)
+tc = tiledlayout(3,2);
+
+% Adjust TileSpacing and Padding properties
+tc.TileSpacing = 'compact';  % Set TileSpacing to 'compact' for tighter spacing between tiles
+tc.Padding = 'compact';      % Set Padding to 'compact' for tighter padding around the layout
+
+% Preallocate for plotting (does not have to be adjusted)
+N=min(numel(plot_paths), prod(tc.GridSize));
+ax=gobjects(N,1);
+
+% Plot
+for i=1:N
+    ax(i) = loadTile(tc,plot_paths{i},i);
+end
+
+map = [0.8 0.8 0.8; 0 0.8 0.15];
+colormap(map);
+h.FaceAlpha = 0.6;
+
+% Adjust the outer position of the figure
+figure_handle = gcf;
+% figure_handle.OuterPosition(4) = 0.6; % Adjust the height as needed
+
+% Save the figure as a PNG
+filename = 'Same_Cali_DCP_PCP_and_LCP.png';
+% filename = 'DCP_all_phiy_ana2.png';
+% saveas(figure_handle, filename);
+saveas(figure_handle, fullfile(PathForPlot_Combined,filename)); % strrep replaces dot from decimal with underscore
+
+% Close the figure
+close(figure_handle);
+
+%% Same Cali all in one plot v2
+
+clear
+clc
+
+home = pwd;
+
+
+PathOfFiles = sprintf('%s/Plots/SameCali/%s',home);
+
+% Define which figures to include in plot
+plot_paths = {sprintf('%s/DCP/gamma_0_5/DCP_gamma_0_5_diff_calibration.fig',PathOfFiles),...
+    sprintf('%s/DCP/gamma_0_7/DCP_gamma_0_7_diff_calibration.fig',PathOfFiles),...
+    sprintf('%s/PCP/gamma_0_5/PCP_gamma_0_5_diff_calibration.fig',PathOfFiles),...
+    sprintf('%s/PCP/gamma_0_7/PCP_gamma_0_7_diff_calibration.fig',PathOfFiles),...
+    sprintf('%s/LCP/gamma_0_5/LCP_gamma_0_5_diff_calibration.fig',PathOfFiles),...
+    sprintf('%s/LCP/gamma_0_7/LCP_gamma_0_7_diff_calibration.fig',PathOfFiles)};
+
+
+% Open full screen figure
+figure('units','normalized','outerposition',[0 0 1 1])
+
+% Set tiled layout with according size (rows, columns)
+tc = tiledlayout(3,2);
+
+% Adjust TileSpacing and Padding properties
+tc.TileSpacing = 'compact';  % Set TileSpacing to 'compact' for tighter spacing between tiles
+tc.Padding = 'compact';      % Set Padding to 'compact' for tighter padding around the layout
+
+% Preallocate for plotting (does not have to be adjusted)
+N=min(numel(plot_paths), prod(tc.GridSize));
+ax=gobjects(N,1);
+
+% Plot
+for i=1:N
+    ax(i) = loadTile(tc,plot_paths{i},i);
+end
+
+map = [0.8 0.8 0.8; 0 0.8 0.15];
+colormap(map);
+h.FaceAlpha = 0.6;
+
+% Adjust the outer position of the figure
+figure_handle = gcf;
+% figure_handle.OuterPosition(4) = 0.6; % Adjust the height as needed
+
+% Save the figure as a PNG
+filename = 'Same_Cali_DCP_PCP_and_LCP_v2.png';
+% filename = 'DCP_all_phiy_ana2.png';
+% saveas(figure_handle, filename);
+saveas(figure_handle, fullfile(PathForPlot_Combined,filename)); % strrep replaces dot from decimal with underscore
+
+% Close the figure
+close(figure_handle);
+
