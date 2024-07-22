@@ -527,3 +527,69 @@ saveas(figure_handle, fullfile(PathForPlot_Combined,filename)); % strrep replace
 % Close the figure
 close(figure_handle);
 
+
+
+%% phiY analysis 2 for one analysis
+
+clear
+clc
+
+home = pwd;
+
+title_para = {'DCP','PCP','LCP'}; %
+gamma_now = {'0_7','0_5'};
+
+PathForPlot_Combined =  sprintf('%s/Plots/Plots_Combined',home);
+
+
+    % Open full screen figure
+    figure('units','normalized','outerposition',[0 0 1 1])
+
+    % Set tiled layout with according size (rows, columns)
+    tc = tiledlayout(2,3);
+
+    % Adjust TileSpacing and Padding properties
+    tc.TileSpacing = 'compact';  % Set TileSpacing to 'compact' for tighter spacing between tiles
+    tc.Padding = 'compact';      % Set Padding to 'compact' for tighter padding around the layout
+
+
+    % paradigm_currrent = title_para(p);
+
+    PathOfFiles_DCP = sprintf('%s/Plots/%s',home,'DCP');
+    PathOfFiles_PCP = sprintf('%s/Plots/%s',home,'PCP');
+    PathOfFiles_LCP = sprintf('%s/Plots/%s',home,'LCP');
+
+    % Define which figures to include in plot
+    plot_paths = {sprintf('%s/gamma_0_7/%s_gamma_0_7_phiyG_0_5_phiyU_0_5_phiyR_0_5.fig',PathOfFiles_DCP,'DCP'),...
+        sprintf('%s/gamma_0_7/%s_gamma_0_7_phiyG_0_5_phiyU_0_5_phiyR_0_5.fig',PathOfFiles_PCP,'PCP'),...
+        sprintf('%s/gamma_0_7/%s_gamma_0_7_phiyG_0_5_phiyU_0_5_phiyR_0_5.fig',PathOfFiles_LCP,'LCP'),...
+        sprintf('%s/gamma_0_5/%s_gamma_0_5_phiyG_0_5_phiyU_0_5_phiyR_0_5.fig',PathOfFiles_DCP,'DCP'),...
+        sprintf('%s/gamma_0_5/%s_gamma_0_5_phiyG_0_5_phiyU_0_5_phiyR_0_5.fig',PathOfFiles_PCP,'PCP'),...
+        sprintf('%s/gamma_0_5/%s_gamma_0_5_phiyG_0_5_phiyU_0_5_phiyR_0_5.fig',PathOfFiles_LCP,'LCP')};
+
+
+
+    % Preallocate for plotting (does not have to be adjusted)
+    N=min(numel(plot_paths), prod(tc.GridSize));
+    ax=gobjects(N,1);
+
+    % Plot
+    for i=1:N
+        ax(i) = loadTile(tc,plot_paths{i},i);
+    end
+
+    % Adjust the outer position of the figure
+    figure_handle = gcf;
+    % figure_handle.OuterPosition(4) = 0.6; % Adjust the height as needed
+
+    % Save the figure as a PNG
+    filename = sprintf('%s_phiyU_analysis_2_07_05.png',paradigm_currrent{1});
+    % filename = 'DCP_all_phiy_ana2.png';
+    % saveas(figure_handle, filename);
+    % saveas(figure_handle, fullfile(PathForPlot_Combined,filename)); % strrep replaces dot from decimal with underscore
+
+    % Close the figure
+    close(figure_handle);
+
+
+

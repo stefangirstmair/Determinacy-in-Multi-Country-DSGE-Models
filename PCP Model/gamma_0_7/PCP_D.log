@@ -1,4 +1,4 @@
-Starting Dynare (version 5.3).
+Starting Dynare (version 5.0).
 Calling Dynare with arguments: none
 Starting preprocessing of the model file ...
 Found 105 equation(s).
@@ -186,9 +186,9 @@ p_GG              0.000205        0.001874        0.000004        0.203935      
 
 
 CORRELATION OF SIMULATED VARIABLES
-VARIABLE       pi_G     p_GG
-pi_G         1.0000  -0.9382
-p_GG        -0.9382   1.0000
+VARIABLE      pi_G    p_GG
+pi_G        1.0000 -0.9382
+p_GG       -0.9382  1.0000
 
 
 AUTOCORRELATION OF SIMULATED VARIABLES

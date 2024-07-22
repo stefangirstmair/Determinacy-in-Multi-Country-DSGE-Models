@@ -139,36 +139,37 @@ theta_R_RG = 1;
 theta_G_RG = 0;
 theta_U_RG = 0;
 
-phi_pi_U = 1.5979;
-phi_pi_G = 1.4094;
+phi_pi_U = 1.5;
+phi_pi_G = 1.5;
 phi_pi_R = 1.5;
 
-phi_Y_U = 0.6394;
-phi_Y_G = 0.6549;
+phi_Y_U = 0.125;
+phi_Y_G = 0.125;
 phi_Y_R = 0.125;
 
-rho_m_U = 0.5364;
-rho_m_G = 0.5644;
+rho_m_U = 0.5;
+rho_m_G = 0.5;
 
-rho_eps_U = 0.8750;
-rho_eps_G = 0.8585;
+rho_eps_U = 0.5;
+rho_eps_G = 0.5;
 
-rho_uip_G = 0.9376;
+rho_uip_G = 0.5;
 
-rho_a_U = 0.8150;
-rho_a_G = 0.8558;
+rho_a_U = 0.8;
+rho_a_G = 0.8;
 
-theta_p_U     = 0.6763;                
-theta_W_U     = 0.5757;                 
+theta_p_U     = 0.75;                
+theta_W_U     = 0.85;                 
 lambda_W_U    = (1-beta*theta_W_U)*(1-theta_W_U)/((1+varphi*eta)*theta_W_U); 
 
-theta_p_G     = 0.7153;                 
-theta_W_G     = 0.6575;                
+theta_p_G     = 0.75;                 
+theta_W_G     = 0.85;                
 lambda_W_G    = (1-beta*theta_W_G)*(1-theta_W_G)/((1+varphi*eta)*theta_W_G); 
 
-theta_p_R     = 0.65;                
+theta_p_R     = 0.75;                
 theta_W_R     = 0.85;               
 lambda_W_R    = (1-beta*theta_W_R)*(1-theta_W_R)/((1+varphi*eta)*theta_W_R); 
+
 
 
 model;

@@ -1,4 +1,4 @@
-Starting Dynare (version 5.3).
+Starting Dynare (version 5.0).
 Calling Dynare with arguments: none
 Starting preprocessing of the model file ...
 Found 105 equation(s).
@@ -9,11 +9,10 @@ Processing outputs ...
 done
 Preprocessing completed.
 
-[Warning: The value of local variables may have been changed to match the globals.  Future versions of MATLAB will require
-that you declare a variable to be global before you use that variable.] 
-[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('DCP_D.driver', '/home/stefan/Dropbox/Stefan/UNI/PhD/DCP Determinacy/Code/Final Code_June_Binder_Suggestions/DCP Model/gamma_0_7/+DCP_D/driver.m', 15)" style="font-weight:bold">DCP_D.driver</a> (<a href="matlab: opentoline('/home/stefan/Dropbox/Stefan/UNI/PhD/DCP Determinacy/Code/Final Code_June_Binder_Suggestions/DCP Model/gamma_0_7/+DCP_D/driver.m',15,0)">line 15</a>)
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', '/home/stefan/dynare/stable-5.3/matlab/dynare.m', 281)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('/home/stefan/dynare/stable-5.3/matlab/dynare.m',281,0)">line 281</a>)
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Det_Ana_Vary_All_gam_0_7', '/home/stefan/Dropbox/Stefan/UNI/PhD/DCP Determinacy/Code/Final Code_June_Binder_Suggestions/Det_Ana_Vary_All_gam_0_7.m', 71)" style="font-weight:bold">Det_Ana_Vary_All_gam_0_7</a> (<a href="matlab: opentoline('/home/stefan/Dropbox/Stefan/UNI/PhD/DCP Determinacy/Code/Final Code_June_Binder_Suggestions/Det_Ana_Vary_All_gam_0_7.m',71,0)">line 71</a>)] 
+[Warning: The value of local variables may have been changed to match the globals.  Future versions of MATLAB will require that you
+declare a variable to be global before you use that variable.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('DCP_D.driver', '/home/stefan/Dropbox/Stefan/UNI/PhD/DCP Determinacy/Code/Code_Girstmair_Det_Final/DCP Model/gamma_0_7/+DCP_D/driver.m', 15)" style="font-weight:bold">DCP_D.driver</a> (<a href="matlab: opentoline('/home/stefan/Dropbox/Stefan/UNI/PhD/DCP Determinacy/Code/Code_Girstmair_Det_Final/DCP Model/gamma_0_7/+DCP_D/driver.m',15,0)">line 15</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', '/usr/lib/dynare/matlab/dynare.m', 289)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('/usr/lib/dynare/matlab/dynare.m',289,0)">line 289</a>)] 
 
 STEADY-STATE RESULTS:
 
@@ -191,9 +190,9 @@ p_GG              0.000502        0.002722        0.000007        0.049096      
 
 
 CORRELATION OF SIMULATED VARIABLES
-VARIABLE       pi_G     p_GG
-pi_G         1.0000  -0.9758
-p_GG        -0.9758   1.0000
+VARIABLE      pi_G    p_GG
+pi_G        1.0000 -0.9758
+p_GG       -0.9758  1.0000
 
 
 AUTOCORRELATION OF SIMULATED VARIABLES
@@ -209,5 +208,5 @@ pi_G                0.00            100.11              0.00              0.00  
 p_GG                0.00            100.11              0.00              0.00              0.00              0.00              0.00              0.00              0.00              0.00            100.11
 Note: numbers do not add up to 100 due to non-zero correlation of simulated shocks in small samples
 
-Total computing time : 0h00m02s
+Total computing time : 0h00m03s
 Note: warning(s) encountered in MATLAB/Octave code
